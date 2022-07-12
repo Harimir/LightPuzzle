@@ -38,7 +38,7 @@ public class LightPuzzlePanel extends JPanel {
         add(button8);
 
     }
-
+//TODO figure out how to make seperate buttons call seperate functions in the array and then use board.updateColor()
     class buttonListener implements ActionListener{
 
         @Override
