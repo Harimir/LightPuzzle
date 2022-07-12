@@ -3,7 +3,6 @@ import javax.swing.*;
 public class LightPuzzleMain {
     public static void main(String[] args) {
         Light arrayOfLights[] = new Light[8];
-        int moves = 0;
         Light first = new Light();
         Light nekst = new Light();
         Light last = new Light();
