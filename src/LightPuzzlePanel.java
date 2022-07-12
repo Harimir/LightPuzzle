@@ -35,6 +35,7 @@ public class LightPuzzlePanel extends JPanel {
         add(button6);
         add(button7);
         add(button8);
+
     }
 
     class buttonListener implements ActionListener{
