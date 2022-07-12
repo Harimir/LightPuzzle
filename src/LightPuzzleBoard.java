@@ -14,10 +14,14 @@ public class LightPuzzleBoard extends JComponent {
     int betwen = sides / 3;
     int edge = betwen / 2 - (lightDiameter / 2);
 
+    public void setArrayOfLights(Light[] arrayOfLights) {
+        this.arrayOfLights = arrayOfLights;
+    }
+
     Light arrayOfLights[];
 
-    public void paintComponent(Graphics g, Light arrayOfLights[]){
-        this.arrayOfLights = arrayOfLights;
+
+    public void paintComponent(Graphics g){
         for (int i=0; i<arrayOfLights.length; i++){
             lamp[i] = off;
         }
