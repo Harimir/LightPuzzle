@@ -21,7 +21,7 @@ public class LightPuzzleMain {
 
 
         JFrame frame = new JFrame();
-        JPanel board = new LightPuzzlePanel();
+        JPanel board = new LightPuzzlePanel(arrayOfLights);
 
         frame.add(board);
         frame.setSize(500, 600);

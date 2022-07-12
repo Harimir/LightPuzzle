@@ -7,8 +7,10 @@ public class LightPuzzlePanel extends JPanel {
 
 
     LightPuzzleBoard board = new LightPuzzleBoard();
+    Light arrayOfLights[];
 
-    public LightPuzzlePanel(){
+    public LightPuzzlePanel(Light arrayOfLights[]){
+        this.arrayOfLights = arrayOfLights;
         board.setPreferredSize(new Dimension( 460, 460));
 
         JButton button1 = new JButton("1");
