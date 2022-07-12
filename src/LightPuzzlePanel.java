@@ -11,7 +11,7 @@ public class LightPuzzlePanel extends JPanel {
 
     public LightPuzzlePanel(Light arrayOfLights[]){
         this.arrayOfLights = arrayOfLights;
-        board.setPreferredSize(new Dimension( 460, 460));
+        board.setPreferredSize(new Dimension( 460, 460), arrayOfLights);
 
         JButton button1 = new JButton("1");
         JButton button2 = new JButton("2");
