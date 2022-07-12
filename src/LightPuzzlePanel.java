@@ -7,6 +7,7 @@ public class LightPuzzlePanel extends JPanel {
 
 
     LightPuzzleBoard board = new LightPuzzleBoard();
+
     public LightPuzzlePanel(){
         board.setPreferredSize(new Dimension( 460, 460));
 
