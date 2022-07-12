@@ -41,7 +41,7 @@ public class LightPuzzlePanel extends JPanel {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            board.changeColor();
+            board.updateColor();
         }
     }
 }

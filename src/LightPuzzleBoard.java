@@ -48,7 +48,7 @@ public class LightPuzzleBoard extends JComponent {
 
     }
 
-    public void changeColor(){
+    public void updateColor(){
         lamp1 = on;
         lamp2 = off;
         repaint();
