@@ -6,6 +6,7 @@ public class LightPuzzleBoard extends JComponent {
     Color on = Color.yellow;
     Color off = Color.black;
     Color background = Color.gray;
+    Color lamp1 = off, lamp2 = off;
 
     int sides = 460;
     int lightDiameter = 50;
@@ -19,9 +20,11 @@ public class LightPuzzleBoard extends JComponent {
         g.setColor(off);
 
         // 1
+        g.setColor(lamp1);
         g.fillOval(edge, edge, lightDiameter, lightDiameter);
 
         // 2
+        g.setColor(lamp2);
         g.fillOval((edge + betwen), edge, lightDiameter, lightDiameter);
 
         // 3
@@ -43,5 +46,11 @@ public class LightPuzzleBoard extends JComponent {
         g.fillOval((edge + betwen + betwen), (edge + betwen + betwen), lightDiameter, lightDiameter);
 
 
+    }
+
+    public void changeColor(){
+        lamp1 = on;
+        lamp2 = on;
+        repaint();
     }
 }
